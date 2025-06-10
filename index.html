@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ការអញ្ជើញអាពាហ៍ពិពាហ៍</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Khmer&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <audio id="background-music" loop autoplay>
+        <source src="music/wedding_song.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <button id="play-pause-btn" class="music-control-btn">🔇</button>
+
+    <section class="hero-section" id="hero-section">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <p class="greeting-text">សូមគោរពអញ្ជើញ</p>
+            <h1 class="couple-names">សេងហាក់ &amp; មីជែន</h1>
+            <p class="event-date">០៦ កក្កដា ២០២៥</p>
+        </div>
+    </section>
+
+    <section class="countdown-section">
+        <h2>ពិធីនឹងចាប់ផ្តើមក្នុងរយៈពេល:</h2>
+        <div id="countdown-timer" class="timer">
+            <div class="timer-box">
+                <span id="days"></span>
+                <p>ថ្ងៃ</p>
+            </div>
+            <div class="timer-box">
+                <span id="hours"></span>
+                <p>ម៉ោង</p>
+            </div>
+            <div class="timer-box">
+                <span id="minutes"></span>
+                <p>នាទី</p>
+            </div>
+            <div class="timer-box">
+                <span id="seconds"></span>
+                <p>វិនាទី</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="details-section">
+        <div class="detail-block">
+            <h3>ពេលវេលា និងទីកន្លែង</h3>
+            <p><strong>ពេលវេលា:</strong> ម៉ោង ០៦:០០ ល្ងាច</p>
+            <p><strong>កាលបរិច្ឆេទ:</strong> ថ្ងៃសៅរ៍ ទី ០៦ ខែ កក្កដា ឆ្នាំ ២០២៥</p>
+            <p><strong>ទីតាំង:</strong> សណ្ឋាគារ XYZ, ភ្នំពេញ</p>
+            <a href="https://maps.app.goo.gl/YourGoogleMapsLinkHere" target="_blank" class="btn">
+                <i class="fas fa-map-marker-alt"></i> មើលទីតាំងលើផែនទី
+            </a>
+            <a href="javascript:void(0)" class="btn" onclick="addToCalendar()">
+                <i class="fas fa-calendar-alt"></i> បន្ថែមទៅប្រតិទិន
+            </a>
+        </div>
+    </section>
+
+    <section class="rsvp-section">
+        <h2>សូមបញ្ជាក់ការចូលរួម</h2>
+        <p>សូមមេត្តាឆ្លើយតបមុនថ្ងៃទី ៣០ មិថុនា ២០២៥</p>
+        <a href="https://forms.gle/YourRSVPFormLinkHere" target="_blank" class="btn rsvp-btn">
+            ឆ្លើយតបឥឡូវនេះ
+        </a>
+    </section>
+
+    <section class="gallery-section">
+        <h2>សាលរូបភាព</h2>
+        <div class="gallery-grid">
+            <img src="images/gallery1.jpg" alt="Gallery Photo 1">
+            <img src="images/gallery2.jpg" alt="Gallery Photo 2">
+            <img src="images/gallery3.jpg" alt="Gallery Photo 3">
+            <img src="images/gallery4.jpg" alt="Gallery Photo 4">
+            </div>
+    </section>
+
+    <section class="footer-section">
+        <p>សូមអរគុណយ៉ាងជ្រាលជ្រៅចំពោះការចូលរួម</p>
+        <p>&copy; 2025 Senghak &amp; Meijen Wedding. រក្សាសិទ្ធិគ្រប់យ៉ាង។</p>
+    </section>
+
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit-id.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
